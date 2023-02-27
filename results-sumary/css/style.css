@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@1,500;1,700;1,800&display=swap');
+
+:root{
+    /*Primarios*/
+ --lightred: hsla(0, 100%, 67%);
+ --orangeyellow: hsl(39, 100%, 56%);
+ --greenteal: hsl(166, 100%, 37%);
+ --cobaltblue: hsl(234, 85%, 45%);
+    /*Gradientes*/
+ --slateblue: hsl(252, 100%, 67%);
+ --royalblue: hsl(241, 81%, 54%);
+ --violetblue: hsla(256, 72%, 46%, 1);
+ --persianblue: hsla(241, 72%, 46%, 0.5);
+ /*Neutrales*/
+ --white: hsl(0, 0%, 100%);
+ --paleblue: hsl(221, 100%, 96%);
+ --lavender: hsl(241, 100%, 89%);
+ --grayblue: hsl(224, 30%, 27%);
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 700px;
+    background-color: lightblue;
+    font-family: 'Hanken Grotesk';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#principal{
+    width: 600px;
+    height: 350px;
+    background-color: var(--white);
+    display: flex;
+    border-radius: 20px;
+/*    border: 1px solid black;*/
+}
+.izquierda{
+    width: 50%;
+    height: 100%;
+/*    border: 1px solid black;*/
+    border-radius: 20px;
+    background-color: var(--violetblue);
+    color: var(--lavender);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.izquierda .puntaje{
+    width: 120px;
+    height: 120px;
+/*    border: 1px solid red;*/
+    border-radius: 50%;
+    background-color: var(--persianblue);
+}
+.puntaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: .5rem;
+}
+.puntaje h1{
+    font-size: 46px;
+    font-weight: 900;
+    color: var(--white);
+    margin: 30px 0 0 0;
+}
+.puntaje p{
+    font-size: 14px;
+}
+.great{
+    width: 75%;
+}
+/*
+.contenedor-derecho{
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 0 20px 20px 0;
+}*/
+.derecha{
+    width: 50%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.derecha h3{
+    width: 80%;
+}
+.puntuacion{
+    width: 80%;
+    padding: .2rem;
+    display: flex;
+    justify-content: space-between;
+/*    border: 1px solid black;*/
+    margin: 0;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.puntuacion p{
+    margin: 0;
+    font-weight: 700;
+    
+}
+.derecha .rojo{
+    color: var(--lightred);
+    background-color: rgba(255, 0, 0, .3);
+}
+.derecha .amarillo{
+    color: var(--orangeyellow);
+    background-color: rgba(255, 255, 0, .3);
+}
+.derecha .verde{
+    color: var(--greenteal);
+    background-color: rgba(0, 255, 0, .3);
+}
+.derecha .azul{
+    color: var(--persianblue);
+    background-color: rgba(0, 0, 255, .3);
+}
+button{
+    width: 80%;
+    background-color: var(--grayblue);
+    text-align: center;
+    padding: .5rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    color: white;
+    border: none;
+}
+.neg{
+    color: black;
+}
+
+@media only screen and (max-width: 560px){
+   #principal{
+    width: 250px;
+    height: 550px;
+    background-color: var(--white);
+    flex-direction: column;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+/*    border: 1px solid black;*/
+} 
+.izquierda{
+    width: 100%;
+    height: 45%;
+/*    border: 1px solid black;*/
+
+}
+.derecha{
+    width: 100%;
+    height: 55%;
+}
+}
