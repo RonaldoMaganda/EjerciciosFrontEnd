@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+:root{
+    /*Primary*/
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+
+/*Neutral*/
+
+    --whiteparagraphs: hsla(0, 0%, 100%, 0.75);
+    --bbuttons: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 15px;
+    background-color: var(--bbuttons);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteparagraphs);
+}
+.imagen{
+    margin-top: 3rem;
+    width: 50px;
+    height: 40px;
+    margin-right: 9rem;
+}
+p{
+    margin-top: 2rem;
+    width: 80%;
+    height: 50%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+h1{
+    width: 80%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--bbuttons);
+    text-transform: uppercase;
+}
+
+.sedan{
+    width: 250px;
+    height: 450px;
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.suv{
+    width: 250px;
+    height: 450px;
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    width: 250px;
+    height: 450px;
+/*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verydarkcyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.btn{
+    width: 150px;
+    margin-bottom: 2rem;
+    background-color: var(--bbuttons);
+    padding: .7rem;
+    border-radius: 30px;
+    border-style: none;
+}
+.btn-sedan{
+    color: var(--bright-orange);
+}
+.btn-suv{
+    color: var(--dark-cyan);
+}
+.btn-luxury{
+    color: var(--verydarkcyan);
+}
