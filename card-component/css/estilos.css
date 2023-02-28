@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    /*Primary*/
+    --main: hsl(233, 47%, 7%);
+    --card: hsl(244, 38%, 16%);
+    --accent: hsl(277, 60%, 50%);
+    --a-color: hsl(228, 45%, 44%);
+    /*Neutral*/
+    --main-heading: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+    /*
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    */
+}
+
+body{
+    width: 100%;
+    height: 600px;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#card{
+    width: 900px;
+    height: 350px;
+    background-color: var(--card);
+    display: flex;
+}
+.izquierda{
+/*    border: 1px solid red;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.izquierda h1{
+    width: 80%;
+    color: var(--main-heading);
+    margin: 2rem 0;
+}
+.izquierda h2{
+    color: var(--main-heading);
+}
+.enlace{
+    color: var(--accent);
+    text-decoration: none;
+}
+.izquierda p{
+    width: 80%;
+    color: var(--main-paragraph);
+    margin-bottom: 3rem;
+}
+
+.inferior{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.inferior p{
+    font-size: 13px;
+}
+.companies, .templates, .queries{
+    text-transform: uppercase;
+}
+
+.derecha{
+    width: 50%;
+    height: 100%;
+    background-color: var(--accent);
+}
+.derecha .imagen{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
