@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --brightyellow: hsl(71, 73%, 54%);
+    --lightgray: hsl(204, 43%, 93%);
+    --grayishblue: hsl(218, 22%, 67%);    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 700px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--lightgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .principal{
+        width: 500px;
+        height: 300px;
+        display: flex;
+         flex-direction: column;
+ /*     flex-flow: row wrap;*/
+        /* flex: 0 1 auto */;
+    /*    border: 1px solid blue;*/
+        background-color: white;
+        border-radius: 20px;
+    }
+    /*H E A D E R*/
+.header{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    border: 1px solid black;*/
+    border-radius: 20px 20px 0 0;
+}
+.hd-contenedor{
+    width: 90%;
+    height: 90%;
+    margin-top: 1.5rem;
+}
+/*I Z Q U I E R D A*/
+.izquierda{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    border: 1px solid red;*/
+    border-radius: 0 0 0 20px;
+    background-color: var(--cyan);
+}
+.izq-contenedor{
+    width: 80%;
+    height: 80%;
+    color: white;
+}
+
+
+
+  }
+/*P R I N C I P A L*/
+.principal{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    /* flex-direction: row; */
+  flex-flow: row wrap;
+    /* flex: 0 1 auto */;
+/*    border: 1px solid blue;*/
+    background-color: white;
+    border-radius: 20px;
+}
+/*H E A D E R*/
+.header{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    border: 1px solid black;*/
+    border-radius: 20px 20px 0 0;
+}
+.hd-contenedor{
+    width: 90%;
+    height: 90%;
+    margin-top: 1.5rem;
+}
+.header h1{
+    font-size: 30px;
+/*    margin-top: 3rem;
+    margin-left: 3rem;*/
+    color: var(--cyan);
+}
+.header h2{
+   margin-top: 1rem;
+/*    margin-left: 3rem;*/
+    color: var(--brightyellow);
+}
+.header p{
+    margin-top: 1rem;
+/*    margin-left: 3rem;*/
+    color: var(--grayishblue);
+    line-height: 1.5rem;
+}
+
+/*I Z Q U I E R D A*/
+.izquierda{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    border: 1px solid red;*/
+    border-radius: 0 0 0 20px;
+    background-color: var(--cyan);
+}
+.izq-contenedor{
+    width: 80%;
+    height: 80%;
+    color: white;
+}
+.izq-contenedor .precio{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--lightgray);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.izq-contenedor .precio  h1{
+    color: white;
+    font-size: 38px;
+}
+button{
+    margin-top: 3rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--brightyellow);
+    color: white;
+    font-weight: 900;
+    border: none;
+}
+/*D E R E C H A*/
+.derecha{
+    width: 50%;
+    height: 60%;
+/*    border: 1px solid green;*/
+    border-radius: 0 0 20px 0;
+    background-color: var(--cyan);
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drc-contenedor{
+    width: 80%;
+    height: 70%;
+    color: white;
+}
+.drc-contenedor p{
+    margin-top: 1rem;
+    line-height: 1.8rem;
+}
