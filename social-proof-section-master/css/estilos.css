@@ -1,0 +1,232 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    /*Primary*/
+    --verydarkmagenta: hsl(300, 43%, 22%);
+    --softpink: hsl(333, 80%, 67%);
+    /*Neutral*/
+    --darkgrayishmagenta: hsl(303, 10%, 53%);
+    --lightgrayishmagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+/*    font-size: 15px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 850px) {
+    /*P R I N C I P A L*/
+#principal{
+    width: 1200px;
+    height: 100vh;
+/*    border: 1px solid black;*/
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*S U P E R I O R*/
+.superior{
+    width: 90%;
+    height: 45%;
+/*    border: 1px solid blue;*/
+    display: flex;
+}
+    /*sup-left*/
+    .sup-left{
+        width: 40%;
+        height: 100%;
+/*        border: 1px solid rebeccapurple;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        
+        width: 70%;
+        font-size: 40px;
+        color: var(--verydarkmagenta);
+        margin-bottom: 1.5rem;
+    }
+    p{
+        
+        font-size: 16px;
+        color: var(--verydarkmagenta);
+        line-height: 1.6rem;
+    }
+    /*sup-right*/
+    .sup-right{
+        width: 60%;
+        height: 100%;
+/*        border: 1px solid gold;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /*calficacion*/
+    .cal{ 
+        width: 70%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: hsla(306, 19%, 89%, 0.3);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cal-2{
+        margin-left: 3rem;
+    }
+    .cal-3{
+        margin-left: 6rem;
+    }
+    /*Estrellas*/
+  
+/*I N F E R I O R*/
+.inferior{
+    width: 90%;
+    height: 45%;
+/*    border: 1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    /*comentarios*/
+    .comentario{
+        width: 30%;
+        height: 200px;
+/*        border: 1px solid brown;*/
+        background-color: var(--verydarkmagenta);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    /*perfil*/
+    .perfil{
+        display: flex;
+        align-items: center;
+        margin-bottom: .3rem;
+    }
+
+    .perfil img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .datos{
+        margin-left: 1rem;
+        
+    }
+    .datos strong{
+        color: white;
+    }
+    .datos p{
+        color: var(--softpink);
+        font-size: 16px;
+    }
+    .com1 p, .com2 p, .com3 p{
+        color: white;
+        font-size: 15px;
+    }
+}
+
+/*Media Queries*/
+@media screen and (max-width: 849px){
+
+    #principal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .superior{
+        width: 80%;
+    }
+    .sup-left h1{
+        color: var(--verydarkmagenta);
+        margin-top: 2rem;
+        font-size: 30px;
+        text-align: center;
+    }
+    .sup-left p{
+        color: var(--verydarkmagenta);
+        margin-top: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .sup-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cal{
+        width: 85%;
+/*        border: 1px solid black;*/
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        background-color: hsla(306, 19%, 89%, 0.3);
+        padding: 0.5rem;
+    }
+    .cal .texto{
+        font-weight: 700;
+        color: var(--verydarkmagenta);
+    }
+    .inferior{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comentario{
+        width: 80%;
+        height: 180px;
+/*        border: 1px solid blue;*/
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: var(--verydarkmagenta);
+    }
+    .perfil{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .perfil img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+    .datos strong{
+        color: white;
+    }
+    .datos p{
+        font-weight: 500;
+        color: var(--softpink);
+    }
+    .com1 p{
+        color: white;
+        font-size: 14px;
+    }
+}
