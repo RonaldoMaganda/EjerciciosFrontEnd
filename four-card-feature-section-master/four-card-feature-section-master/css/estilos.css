@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --verydarkblue: hsl(234, 12%, 34%);
+    --grayishblue: hsl(229, 6%, 66%);
+    --verylightgray: hsl(0, 0%, 98%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verylightgray);
+
+}
+#principal{
+    width: 300px;
+    height: 95%;
+/*    border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+/*    margin-top: 2rem;*/
+    
+}
+.texto{
+    width: 90%;
+    margin-top: 3rem;
+}
+.texto h1{
+    font-size: 21px;
+    font-weight: 100;
+}
+.texto .negrita{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+ p{
+    font-size: 13px;
+    color: var(--grayishblue);
+}
+.texto p{
+    
+    margin-bottom: 2rem;
+}
+
+
+.cuadro{
+    width: 270px;
+    height: 180px;
+/*    border: 1px solid black;*/
+    background-color: white;
+    margin-bottom: 1rem;
+    
+}
+.cuadro h2{
+    font-size: 20px;
+    margin-top: 1rem;
+}
+.izquierda{
+    border-top: 3px solid var(--cyan);
+}
+.centrado1{
+    border-top: 3px solid var(--red);
+}
+.centrado2{
+    border-top: 3px solid var(--orange);
+}
+.derecha{
+    border-top: 3px solid var(--blue);
+}
+.cuadro .contenido img{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 1.5rem;
+}
+.contenido{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: 800px){
+    body{
+        width: 1200px;
+        height: auto;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--verylightgray);
+    
+    }
+    #principal{
+        width: 1050px;
+        height: 100%;
+/*        border: 1px solid red;*/
+        align-items: center;
+        justify-content: space-between;
+    /*    margin-top: 2rem;*/
+        
+    }
+    .texto{
+        width: 45%;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .centrado{
+        display: flex;
+        justify-content: space-between;
+    }
+    .centrado1{
+        margin-right: 23rem;
+    }
+    .cuadro{
+        width: 320px;
+        height: 200px;
+    /*    border: 1px solid black;*/
+        background-color: white;
+        margin-bottom: -5.5rem;
+        
+    }
+}
