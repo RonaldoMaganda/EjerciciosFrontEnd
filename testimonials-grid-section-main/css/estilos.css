@@ -1,0 +1,207 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+/*### Primary*/
+
+--moderateviolet: hsl(263, 55%, 52%);
+--verydarkgrayishblue: hsl(217, 19%, 35%);
+--verydarkblackishblue: hsl(219, 29%, 14%);
+--white: hsl(0, 0%, 100%);
+
+/*### Neutral*/
+
+--lightgray: hsl(0, 0%, 81%);
+--lightgrayishblue: hsl(210, 46%, 95%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--lightgrayishblue);
+    width: 100%;
+    height: 100%;
+/*    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+#principal{
+    width: 400px;
+    height: 90%;
+/*    border: 1px solid red;*/
+    margin: 0 auto;
+/*     display: flex;
+    flex-direction: column;
+    align-items: center;/*quitar
+    justify-content: center;
+    gap: 1rem; */
+}
+
+.testimonio{
+/*    border: 3px solid rgb(79, 245, 2);*/
+    width: auto;
+    height: /*450px*/ auto;
+    padding: 1.8rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.testimonio:last-child{
+    margin-bottom: 0;
+}
+.testimonio-1{
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: var(--moderateviolet);
+    color: var(--white);
+}
+.testimonio-2{
+    background-color: var(--verydarkgrayishblue);
+    color: var(--white);
+}
+.testimonio-3, .testimonio-5{
+    background-color: var(--white);
+    
+}
+
+.testimonio-3 p.nombre, .testimonio-5 p.nombre{
+color: var(--verydarkblackishblue);
+}
+.testimonio-3 p.check, .testimonio-5 p.check{
+    color: var(--verydarkgrayishblue);
+}
+.testimonio-3 p.comentario, .testimonio-5 p.comentario{
+    color: var(--verydarkgrayishblue);
+}
+
+.testimonio-3 h1, .testimonio-5 h1{
+    color: var(--verydarkblackishblue);
+}
+.testimonio-4{
+    background-color: var(--verydarkblackishblue);
+    color: var(--white);
+}
+.testimonio h1{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+.testimonio p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--lightgray);
+}
+.personal{
+     display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem ;
+}
+.personal img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--lightgray);
+    border-radius: 50%;
+}
+p.nombre{
+    font-size: 18px;
+    color: var(--white);
+}
+@media screen and (min-width: 700px) {
+   #principal{
+    width: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+   } 
+}
+@media screen and (min-width: 1000px){
+    #principal{
+        width: 1200px;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        gap: 1.5rem;
+    }
+    .testimonio-1{
+        grid-column: 1 / 3;
+    }
+
+    .testimonio-4{
+        grid-column: 2 / 4;
+    }
+    .testimonio-5{
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+}
+
+/* @media screen and (min-width:750px) {
+    #principal{
+        width: 720px;
+        height: 100%;
+/*        border: 1px solid red;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .testimonio{
+/*        border: 3px solid rgb(79, 245, 2);
+        width: 350px;
+        height: /*450px auto;
+        padding: 1.8rem;
+        border-radius: 10px;
+    }
+    .testimonio-1{
+        width: 100%;
+        height: 300px;
+    }
+
+}
+@media screen and (min-width:1050px) {
+    body{
+        width: 100%;
+        height: 800px;
+    }
+    #principal{
+        width: 1100px;
+        height: 800px;
+        border: 1px solid red;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: flex-start;
+     
+    }
+    .testimonio{
+        border: 3px solid rgb(79, 245, 2);
+        padding: 1.8rem;
+        border-radius: 10px;
+    }
+    .testimonio-1{
+        width: 45%;
+        height: 45%;
+       
+    }
+    .testimonio-2{
+        width: 25%;
+        height: 45%;
+        
+    }
+    .testimonio-3{
+        width: 25%;
+        height: 100%;
+        
+    }
+    .testimonio-4{
+        width: 45%;
+        height: 45%;
+       
+    }
+    .testimonio-5{
+        width: 25%;
+        height: 45%;
+        
+    }
+} */
